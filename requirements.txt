@@ -1,1 +1,12 @@
 streamlit
+cv2
+mediapipe
+numpy
+pandas
+sklearn.ensemble
+RandomForestClassifier
+tempfile
+boto3
+os
+dotenv
+load_dotenv
