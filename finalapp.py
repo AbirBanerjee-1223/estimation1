@@ -105,8 +105,8 @@ if uploaded_video is not None:
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
     
-    output_path = tempfile.NamedTemporaryFile(delete=False, suffix='.webm').name
-    fourcc = cv2.VideoWriter_fourcc(*'VP80')
+    output_path = tempfile.NamedTemporaryFile(delete=False, suffix='.mp4').name
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Use 'mp4v' for wider compatibility
     out = cv2.VideoWriter(output_path, fourcc, fps, (width, height))
     
     segment_length = 30
