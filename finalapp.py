@@ -14,7 +14,7 @@ load_dotenv()
 access_key = os.getenv("AWS_ACCESS_KEY")
 secret_key = os.getenv("AWS_SECRET_KEY")
 bucket_name = os.getenv("AWS_BUCKET_NAME")
-region = os.getenv("AWS_REGION")
+region = os.getenv("AWS_REGION1")
 s3_path = "combined_csv_abir/combined_angles_final.csv"
 
 # Function to download the CSV file from S3
